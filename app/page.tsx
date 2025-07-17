@@ -240,7 +240,7 @@ export default function HomePage() {
           </div>
           <div>
             <div className="font-bold text-base sm:text-lg text-red-100">FITNESS FEVER</div>
-            <div className="text-xs text-red-300">Bhayandar • Borivali</div>
+            <div className="text-xs text-red-300">Bhayandar • Borivali • Golden Nest</div>
           </div>
         </div>
 
@@ -286,7 +286,10 @@ export default function HomePage() {
         {/* Desktop Right Side */}
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex items-center space-x-3">
-            <Instagram className="w-4 h-4 text-red-400 hover:text-red-500 cursor-pointer transition-colors" href="https://www.instagram.com/fitnessfevergym?igsh=cWJ3emdibXoyNjNm" />
+            <a href="https://www.instagram.com/fitnessfevergym" target="_blank" rel="noopener noreferrer">
+  <Instagram className="w-5 h-5 text-red-500 hover:text-red-400 cursor-pointer transition-colors" />
+</a>
+
           </div>
           <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 text-sm font-medium" ><a href="/pricing">Join Now</a></Button>
         </div>
@@ -342,8 +345,10 @@ export default function HomePage() {
                 CONTACT
               </Link>
               <div className="flex items-center space-x-4 pt-4 border-t border-gray-800">
-                <Instagram className="w-5 h-5 text-red-400 hover:text-red-500 cursor-pointer transition-colors"/>
-                <Facebook className="w-5 h-5 text-red-400 hover:text-red-500 cursor-pointer transition-colors" />
+                <a href="https://www.instagram.com/fitnessfevergym" target="_blank" rel="noopener noreferrer">
+  <Instagram className="w-5 h-5 text-red-500 hover:text-red-400 cursor-pointer transition-colors" />
+</a>
+
               </div>
             </div>
           </div>
@@ -479,7 +484,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="location-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300 group">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
@@ -496,9 +501,76 @@ export default function HomePage() {
                   <div className="text-red-200">
                     <div className="font-medium mb-1">Address:</div>
                     <div className="text-sm">
-                      1st Floor, Kunal Shopping Arcade,
+                      Gr suraj palace  
                       <br />
                       Navghar Road, Bhayandar East,
+                      <br />
+                      Behind shree ram jewellers
+                      <br />
+                      Thane – 401105
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Operating Hours:</div>
+                    <div className="text-sm">
+                      Mon-Sat: 6 AM - 11 PM
+                      <br />
+                      Sunday: 9 AM - 1 PM
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Facilities:</div>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        AC Gym Floor
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Free Parking
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Lockers
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Charging Station
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/aU5ucrU9kRMP7PYy7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    Get Directions
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+            <Card className="location-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+                    <MapPin className="w-6 h-6 text-green-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-red-50">Golden Nest</h3>
+                    <Badge className="mt-1 bg-green-600 text-white text-xs">Main Branch</Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Address:</div>
+                    <div className="text-sm">
+                      Gr suraj palace  
+                      <br />
+                      Navghar Road, Bhayandar East,
+                      <br />
+                      Behind shree ram jewellers
                       <br />
                       Thane – 401105
                     </div>
@@ -532,10 +604,16 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
-                  <MapPin className="w-4 h-4 mr-2" />
-                  Get Directions
-                </Button>
+                <a
+                  href="https://maps.app.goo.gl/GEapLRqexsgL9vSH7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                     <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                     <MapPin className="w-4 h-4 mr-2" />
+                     Get Directions
+                     </Button>
+                  </a>
               </CardContent>
             </Card>
 
@@ -566,7 +644,9 @@ export default function HomePage() {
                   <div className="text-red-200">
                     <div className="font-medium mb-1">Operating Hours:</div>
                     <div className="text-sm">
-                      Daily: 6 AM - 11 PM
+                      Mon-Sat: 6 AM - 11 PM
+                      <br />
+                      Sunday: 10 am-11:30 pm
                       <br />
                       <span className="text-green-500">Extended Hours</span>
                     </div>
@@ -590,11 +670,16 @@ export default function HomePage() {
                     </div>
                   </div>
                 </div>
-
-                <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">
+                <a
+                  href="https://maps.app.goo.gl/S8dWUMsxyiFZV17E8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
                   <MapPin className="w-4 h-4 mr-2" />
-                  Get Directions
-                </Button>
+                    Get Directions
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           </div>
@@ -727,93 +812,41 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="pricing-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-2 text-red-50">Monthly</h3>
-                <div className="text-4xl font-black text-red-500 mb-1">₹1,000</div>
-                <div className="text-red-300 text-sm mb-6">per month</div>
-                <ul className="space-y-3 mb-8 text-left">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Full AC Gym Access</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">All Equipment Usage</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Locker & Changing Room</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Free Parking</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-gray-800 hover:bg-gray-700 text-white">Choose Monthly</Button>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+  {/* Gym Package */}
+  <Card className="pricing-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300">
+    <CardContent className="p-8 text-center">
+      <h3 className="text-2xl font-bold mb-2 text-red-50">Gym Package</h3>
+      <p className="text-red-300 text-sm mb-6">Only Gym Access</p>
+      <ul className="space-y-4 mb-8 text-left mt-6">
+        <li className="flex justify-between text-red-200"><span>1 Month</span><span>₹1500</span></li>
+        <li className="flex justify-between text-red-200"><span>3 Months</span><span>₹3500</span></li>
+        <li className="flex justify-between text-red-200"><span>6 Months</span><span>₹5500</span></li>
+        <li className="flex justify-between text-red-200"><span>12 Months</span><span>₹7500</span></li>
+      </ul>
+      <Button className="w-full bg-red-600 hover:bg-red-700 text-white">Join Gym</Button>
+    </CardContent>
+  </Card>
 
-            <Card className="pricing-card bg-gradient-to-b from-red-900/20 to-red-800/10 border-red-500 relative transform scale-105">
-              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <Badge className="bg-red-600 text-white px-4 py-1">BEST VALUE</Badge>
-              </div>
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-2 text-red-50">Quarterly</h3>
-                <div className="text-4xl font-black text-red-500 mb-1">₹2,500</div>
-                <div className="text-red-300 text-sm mb-2">for 3 months</div>
-                <div className="text-green-500 text-xs mb-4">Save ₹500!</div>
-                <ul className="space-y-3 mb-8 text-left">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Everything in Monthly</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Group Classes Access</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Basic Nutrition Guidance</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Priority Booking</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-red-600 hover:bg-red-700 text-white">Choose Quarterly</Button>
-              </CardContent>
-            </Card>
+  {/* Silver Package */}
+  <Card className="pricing-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300">
+    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+      <Badge className="bg-red-600 text-white px-4 py-1">MOST POPULAR</Badge>
+    </div>
+    <CardContent className="p-8 text-center">
+      <h3 className="text-2xl font-bold mb-2 text-red-50">Silver Package</h3>
+      <p className="text-red-300 text-sm mb-6">Gym + Cardio Access</p>
+      <ul className="space-y-4 mb-8 text-left mt-6">
+        <li className="flex justify-between text-red-200"><span>1 Month</span><span>₹2000</span></li>
+        <li className="flex justify-between text-red-200"><span>3 Months</span><span>₹4500</span></li>
+        <li className="flex justify-between text-red-200"><span>6 Months</span><span>₹6500</span></li>
+        <li className="flex justify-between text-red-200"><span>12 Months</span><span>₹9000</span></li>
+      </ul>
+      <Button className="w-full bg-red-600 hover:bg-red-700 text-white">Join Silver</Button>
+    </CardContent>
+  </Card>
+</div>
 
-            <Card className="pricing-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-2 text-red-50">Annual</h3>
-                <div className="text-4xl font-black text-red-500 mb-1">₹7,000</div>
-                <div className="text-red-300 text-sm mb-2">for 12 months</div>
-                <div className="text-green-500 text-xs mb-4">Save ₹5,000!</div>
-                <ul className="space-y-3 mb-8 text-left">
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Everything in Quarterly</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Steam & Massage Access</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Personal Training Sessions</span>
-                  </li>
-                  <li className="flex items-center">
-                    <CheckCircle className="w-4 h-4 text-green-500 mr-2" />
-                    <span className="text-sm text-red-200">Custom Meal Plans</span>
-                  </li>
-                </ul>
-                <Button className="w-full bg-gray-800 hover:bg-gray-700 text-white">Choose Annual</Button>
-              </CardContent>
-            </Card>
-          </div>
 
           <div className="text-center mt-12">
             <p className="text-red-200 mb-4">
@@ -846,14 +879,13 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-red-200 text-sm text-center mb-4">
-                  "Best equipped gym with experienced trainers. The infrastructure is just awesome! Highly recommend for
-                  serious fitness enthusiasts."
+                  Had a great experience in this gym , gained a lot of knowledge from trainer   In simple language BEST GYM I have ever seen till now....👍👍 …
                 </p>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-red-500 to-red-600 rounded-full flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-white font-bold text-sm">MB</span>
+                    <span className="text-white font-bold text-sm">O.B</span>
                   </div>
-                  <h3 className="font-bold text-red-100">Member Review</h3>
+                  <h3 className="font-bold text-red-100">Omkar Bamane</h3>
                   <p className="text-red-300 text-sm">Bhayandar Branch</p>
                 </div>
               </CardContent>
@@ -867,15 +899,14 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-red-200 text-sm text-center mb-4">
-                  "Amazing facilities with steam and massage services. The nutrition consultancy really helped me
-                  achieve my goals. Great value for money!"
+                  "The gym is exceptional... Equipments are also top class .... hygiene and cleanliness are good... trainers are well educated and helpful"
                 </p>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-white font-bold text-sm">FF</span>
+                    <span className="text-white font-bold text-sm">O</span>
                   </div>
-                  <h3 className="font-bold text-red-100">Fitness Enthusiast</h3>
-                  <p className="text-red-300 text-sm">Borivali Branch</p>
+                  <h3 className="font-bold text-red-100">Om Singh</h3>
+                  <p className="text-red-300 text-sm">New Golden Nest Branch</p>
                 </div>
               </CardContent>
             </Card>
@@ -888,25 +919,30 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-red-200 text-sm text-center mb-4">
-                  "The group classes are fantastic! CrossFit, yoga, boxing - everything under one roof. The trainers are
-                  very supportive and knowledgeable."
+                  "Been working out at this place since 2018. The place is compact & vibe is great. It does get a bit crowded but who wouldn’t want to workout with a great setup of equipments. The stuff seem to be doing a good job and are approachable. ✌️"
                 </p>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-green-600 rounded-full flex items-center justify-center mb-2 mx-auto">
-                    <span className="text-white font-bold text-sm">GC</span>
+                    <span className="text-white font-bold text-sm">K</span>
                   </div>
-                  <h3 className="font-bold text-red-100">Group Class Member</h3>
-                  <p className="text-red-300 text-sm">Regular Member</p>
+                  <h3 className="font-bold text-red-100">Kevin David Alvares</h3>
+                  <p className="text-red-300 text-sm">Borivali Branch</p>
                 </div>
               </CardContent>
             </Card>
           </div>
 
           <div className="text-center mt-12">
-            <Button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-8 py-3">
+            <a
+              href="https://www.instagram.com/fitnessfevergym"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-gradient-to-r from-red-600 to-red-700   hover:from-red-700 hover:to-red-800 text-white px-8 py-3">
               <Instagram className="w-4 h-4 mr-2" />
               Follow Us for More Reviews
             </Button>
+            </a>
           </div>
         </div>
       </section>
