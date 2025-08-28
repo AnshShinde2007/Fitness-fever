@@ -33,6 +33,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger)
 }
+export const metadata={
+  title:"Best Gym in Bhayandar | Fitness Fever – Fitness, Nutrition & Wellness",
+  description:"Join Fitness Fever, the best gym in Bhayandar. Modern equipment, certified trainers, and sports nutrition experts to help you reach your goals."
+}
 
 export default function HomePage() {
   const heroRef = useRef<HTMLDivElement>(null)
@@ -286,10 +290,9 @@ export default function HomePage() {
         {/* Desktop Right Side */}
         <div className="hidden lg:flex items-center space-x-4">
           <div className="flex items-center space-x-3">
-            <a href="https://www.instagram.com/fitnessfevergym" target="_blank" rel="noopener noreferrer">
-  <Instagram className="w-5 h-5 text-red-500 hover:text-red-400 cursor-pointer transition-colors" />
-</a>
-
+            <a href="https://www.instagram.com/fitnessfevergym"  target="_blank" rel="noopener noreferrer">
+              <Instagram className="w-5 h-5 text-red-500 hover:text-red-400 cursor-pointer transition-colors" />
+            </a>
           </div>
           <Button className="bg-red-600 hover:bg-red-700 text-white px-6 py-2 text-sm font-medium" ><a href="/pricing">Join Now</a></Button>
         </div>
@@ -366,7 +369,7 @@ export default function HomePage() {
                   Mumbai's Best Equipped Gym
                 </span>
               </div>
-              <Badge className="ml-0 sm:ml-4 bg-red-600 text-white w-fit">2 Locations</Badge>
+              <Badge className="ml-0 sm:ml-4 bg-red-600 text-white w-fit">3 Locations</Badge>
             </div>
 
             <h1
@@ -391,14 +394,6 @@ export default function HomePage() {
                   Start Your Transformation
                   <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </span>
-              </Button>
-
-              <Button
-                variant="outline"
-                className="border-red-500/30 text-red-100 hover:bg-red-900/20 px-6 py-4 sm:py-6 group bg-transparent"
-              >
-                <Play className="mr-2 h-4 w-4 sm:h-5 sm:w-5 fill-current" />
-                Virtual Gym Tour
               </Button>
             </div>
 

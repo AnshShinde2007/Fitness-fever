@@ -99,6 +99,218 @@ export default function LocationsPage() {
       </nav>
 
       {/* Hero Section */}
+      <section ref={locationsRef} className="relative py-12 sm:py-16 lg:py-20 bg-gradient-to-b from-black to-gray-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-red-50">
+              Our <span className="text-red-500">Locations</span>
+            </h2>
+            <p className="text-red-200 text-lg">
+              Two premium locations in Mumbai's northern suburbs for your convenience
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="location-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-red-500/20 rounded-lg flex items-center justify-center mr-4">
+                    <MapPin className="w-6 h-6 text-red-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-red-50">Bhayandar East</h3>
+                    <Badge className="mt-1 bg-green-600 text-white text-xs">Main Branch</Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Address:</div>
+                    <div className="text-sm">
+                      Gr suraj palace  
+                      <br />
+                      Navghar Road, Bhayandar East,
+                      <br />
+                      Behind shree ram jewellers
+                      <br />
+                      Thane – 401105
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Operating Hours:</div>
+                    <div className="text-sm">
+                      Mon-Sat: 6 AM - 11 PM
+                      <br />
+                      Sunday: 9 AM - 1 PM
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Facilities:</div>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        AC Gym Floor
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Free Parking
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Lockers
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Charging Station
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/aU5ucrU9kRMP7PYy7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    Get Directions
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+            <Card className="location-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-green-500/20 rounded-lg flex items-center justify-center mr-4">
+                    <MapPin className="w-6 h-6 text-green-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-red-50">Golden Nest</h3>
+                    <Badge className="mt-1 bg-green-600 text-white text-xs">Main Branch</Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Address:</div>
+                    <div className="text-sm">
+                      Gr suraj palace  
+                      <br />
+                      Navghar Road, Bhayandar East,
+                      <br />
+                      Behind shree ram jewellers
+                      <br />
+                      Thane – 401105
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Operating Hours:</div>
+                    <div className="text-sm">
+                      Mon-Sat: 6 AM - 11 PM
+                      <br />
+                      Sunday: 9 AM - 1 PM
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Facilities:</div>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        AC Gym Floor
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Free Parking
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Lockers
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Charging Station
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+
+                <a
+                  href="https://maps.app.goo.gl/GEapLRqexsgL9vSH7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+                     <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                     <MapPin className="w-4 h-4 mr-2" />
+                     Get Directions
+                     </Button>
+                  </a>
+              </CardContent>
+            </Card>
+
+            <Card className="location-card bg-gray-900/50 border-gray-800 hover:border-red-500/50 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="flex items-center mb-6">
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mr-4">
+                    <MapPin className="w-6 h-6 text-blue-500" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-red-50">Borivali West</h3>
+                    <Badge className="mt-1 bg-blue-600 text-white text-xs">Premium Branch</Badge>
+                  </div>
+                </div>
+
+                <div className="space-y-4 mb-6">
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Address:</div>
+                    <div className="text-sm">
+                      1st Floor, Rosemar Apartment,
+                      <br />
+                      Holy Cross Road, IC Colony,
+                      <br />
+                      Borivali West, Mumbai – 400103
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Operating Hours:</div>
+                    <div className="text-sm">
+                      Mon-Sat: 6 AM - 11 PM
+                      <br />
+                      Sunday: 10 am-11:30 pm
+                      <br />
+                      <span className="text-green-500">Extended Hours</span>
+                    </div>
+                  </div>
+
+                  <div className="text-red-200">
+                    <div className="font-medium mb-1">Special Features:</div>
+                    <div className="flex flex-wrap gap-2 mt-2">
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Steam Room
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Massage Therapy
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Premium Equipment
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-red-500/30 text-red-200">
+                        Nutrition Consultancy
+                      </Badge>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  href="https://maps.app.goo.gl/S8dWUMsxyiFZV17E8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="w-full bg-red-600 hover:bg-red-700 text-white">
+                  <MapPin className="w-4 h-4 mr-2" />
+                    Get Directions
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
       <section className="relative py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <div className="hero-content text-center">
