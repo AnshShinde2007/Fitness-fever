@@ -467,39 +467,6 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-
-        {/* Stats Section - Mobile Responsive */}
-        <div
-          ref={statsRef}
-          className="absolute bottom-4 sm:bottom-8 left-4 sm:left-6 lg:left-12 right-4 sm:right-6 lg:right-12"
-        >
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-6 bg-black/60 backdrop-blur-sm p-4 sm:p-6 rounded-lg border border-gray-800/50">
-            <div className="text-center group cursor-pointer">
-              <div className="text-xl sm:text-2xl font-bold text-red-500 mb-1 transition-transform duration-300 group-hover:scale-110">
-                2
-              </div>
-              <div className="text-xs text-red-300 uppercase tracking-wider">Locations</div>
-            </div>
-            <div className="text-center group cursor-pointer">
-              <div className="text-xl sm:text-2xl font-bold text-red-500 mb-1 transition-transform duration-300 group-hover:scale-110">
-                5★
-              </div>
-              <div className="text-xs text-red-300 uppercase tracking-wider">Rated</div>
-            </div>
-            <div className="text-center group cursor-pointer">
-              <div className="text-xl sm:text-2xl font-bold text-red-500 mb-1 transition-transform duration-300 group-hover:scale-110">
-                15+
-              </div>
-              <div className="text-xs text-red-300 uppercase tracking-wider">Hours Daily</div>
-            </div>
-            <div className="text-center group cursor-pointer">
-              <div className="text-xl sm:text-2xl font-bold text-red-500 mb-1 transition-transform duration-300 group-hover:scale-110">
-                ₹1K
-              </div>
-              <div className="text-xs text-red-300 uppercase tracking-wider">Starting Price</div>
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Why Choose Fitness Fever Section */}

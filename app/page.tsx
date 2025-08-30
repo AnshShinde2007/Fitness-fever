@@ -1067,9 +1067,9 @@
 // app/page.tsx (server component with metadata only)
 
 export const metadata = {
-  title: "Best Gym in Bhayandar | Fitness Fever – Fitness, Nutrition & Wellness",
+  title: ": Gym Programs in [City] | Fitness Classes & Sports Nutrition",
   description:
-    "Join Fitness Fever, the best gym in Bhayandar. Modern equipment, certified trainers, and sports nutrition experts to help you reach your goals.",
+    "Explore [Gym Name] programs in [City]: Yoga, CrossFit, Zumba, Personal Training, and Sports Nutrition Coaching for better results.",
 };
 
 import HomePageClient from "../components/Homepage";
