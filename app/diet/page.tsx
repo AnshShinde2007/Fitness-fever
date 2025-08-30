@@ -6,8 +6,8 @@ export const metadata = {
     "Join Fitness Fever, the best gym in Bhayandar. Modern equipment, certified trainers, and sports nutrition experts to help you reach your goals.",
 };
 
-import LocationsPage from "@/components/Locations";
+import Diet from "../../components/diet";
 
 export default function Page() {
-  return <LocationsPage />;
+  return <Diet />;
 }
